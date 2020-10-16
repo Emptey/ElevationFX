@@ -1,0 +1,482 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(5, 5, 5);
+    color: rgb(235, 227, 227);
+}
+
+/* logo */
+.logo {
+    width: 150px;
+    height: 150px;
+}
+/* logo */
+
+/* toastr configuration */
+.toast-success {
+    background-color: rgb(0, 165, 41) !important;
+}
+
+.toast-error {
+    background-color: rgb(128, 0, 0) !important;
+}
+
+.toast-warning {
+    background-color: rgb(184, 89, 34) !important;
+}
+
+.toast-info {
+    background-color: #0995e6;
+}
+/* end toastr */
+
+/* status */
+.success {color:rgb(20, 206, 3)}
+.error {color: rgb(206, 3, 3);}
+/* end status */
+
+/* login form */
+.login-form {
+    text-align: left;
+    width: 600px;
+    padding: 70px;
+    margin-top: 150px !important;
+    background-color: rgb(10, 10, 10);
+    border-radius: 26px;
+
+}
+
+.login-form input {
+    border: 1px solid #fc7405;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    padding: 2% 5% 2%;
+    background-color: transparent;
+    color: #fc7405;
+    outline: 0;
+}
+
+.login-form label {
+    display: block;
+    font-size: 14pt;
+    color: rgb(109, 105, 105);
+}
+
+.login-form button {
+    font-size: 16pt;
+    border-radius: 5px;
+    padding: 2.5%;
+    background-color: transparent;
+    border: 1px solid #fc7405;
+    width: 50%;
+    color: #fc7405;
+    transition: ease-in background-color .4s, ease-in color .4s;
+    outline: 0;
+}
+
+.login-form button:hover {
+    background-color: #fc7405;
+    color: rgb(10, 10, 10);
+    border: 0;
+    outline: 0;
+}
+
+/* nav */
+.admin-nav {
+    background-color: rgb(13, 13, 13);
+    height: 100%;
+    padding: 2% auto;
+}
+
+.nav a {
+    margin: 3%;
+    font-size: 14pt;
+    color: rgb(126, 122, 122);
+    width: 90% !important;
+    transition: ease-in color .4s;
+}
+
+.nav a>i {
+    margin-right: 8%;
+    font-size: 16pt;
+}
+
+.active-link {
+    text-decoration: none;
+    color: #fc7405 !important;
+    border: 1px solid #fc7405;
+    border-radius: 5px;
+    padding: 2.5%;
+}
+
+.nav a:hover {
+    color: #fc7405;
+}
+
+/* end nav */
+
+/* header */
+.header {
+    background-color: rgb(13, 13, 13);
+    border-left: 1px solid rgba(56, 55, 54, 0.55);
+    margin: 0;
+    padding: 1.2% 2% 0.2% 0.5%;
+    width: 100% !important;
+}
+
+.header ul {
+    list-style: none;
+    width: 100% !important;
+}
+
+.header ul>li>a {
+    text-decoration: none;
+    color: rgb(126, 122, 122);
+    font-size: 16pt;
+    transition: ease-in color .4s;
+}
+
+.header ul>li {
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.header ul>li>a:hover {
+    color: #fc7405;
+}
+
+a.active {
+    text-decoration: none;
+    color: #fc7405 !important;
+}
+/* end header */
+
+/* cards */
+.dashboard-card {
+    padding: 5%;
+    background-color: rgb(13, 13, 13);
+    color: rgb(126, 122, 122);
+    border-radius: 5px;
+    width: 100%;
+    height: max-content;
+}
+
+.dashboard-card p {
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+
+.dashboard-card p>i {
+    font-size: 20pt;
+    margin-right: 5%;
+    transition: ease-in color .4s;
+}
+
+.dashboard-card:hover p>i {
+    color: #fc7405;
+}
+
+.dashboard-card p.figure {
+    text-align: right;
+    font-size: 20pt;
+    font-weight: thin;
+    width: 100%;
+}
+
+.user-card {
+    background-color: rgb(13, 13, 13);
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.user-card label {
+    display: block;
+    font-size: 16pt;
+    color: #fc7405;
+}
+
+.user-card input {
+    border: 1px solid #fc7405;
+    border-radius: 5px;
+    width: 50%;
+    height: 60px;
+    padding: 1%;
+    background-color: transparent;
+    color: #fc7405;
+    font-size: 14pt;
+    outline: 0;
+}
+
+.user-card select {
+    border: 1px solid #fc7405;
+    border-radius: 5px;
+    width: 50%;
+    height: 60px;
+    padding: 1%;
+    background-color: transparent;
+    color: #fc7405;
+    font-size: 14pt;
+    outline: 0;
+}
+
+.user-card textarea {
+    border: 1px solid #fc7405;
+    border-radius: 5px;
+    width: 50%;
+    height: 60px;
+    padding: 1%;
+    background-color: transparent;
+    color: #fc7405;
+    font-size: 14pt;
+    outline: 0;
+}
+
+.user-card button {
+    font-size: 16pt;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: transparent;
+    border: 1px solid #fc7405;
+    width: 15%;
+    height: 60px;
+    margin-left: 0.5%;
+    color: #fc7405;
+    transition: ease-in background-color .4s, ease-in color .4s;
+    outline: 0;
+}
+
+.img-background {
+    background: url('../img/mb1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.user-card button:hover {
+    background-color: #fc7405;
+    color: rgb(10, 10, 10);
+    border: 0;
+    outline: 0;
+}
+
+.pay-all {
+    outline: 0;
+    border: 0;
+    color: rgb(20, 206, 3);
+    font-size: 16pt;
+}
+
+.pay-all:hover {
+    outline: 0;
+}
+/* end cards */
+
+/* table */
+table thead>tr {
+    font-size: 16pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #fc7405;
+    color:rgb(10, 10, 10);
+}
+
+table tbody>tr {
+    font-size: 16pt;
+    font-weight: lighter;
+    background-color: transparent;
+    color: rgb(221, 211, 211);
+    border: 1px solid transparent;
+    transition: all .4s ease;
+}
+
+table tbody>tr:hover {
+    color: #fc7405;
+    border-bottom: 1px solid #fc7405;
+}
+/* end table */
+
+/* padding */
+.no-padding {
+    padding: 0;
+}
+/* end padding */
+
+/* margin */
+.no-margin {margin: 0}
+.x1-margin-top{margin-top: 1%}
+.x1-5-margin-top{margin-top:1.5%}
+.x2-margin-top{margin-top: 2%}
+.x2-5-margin-top{margin-top:2.5%}
+.x3-margin-top{margin-top:3%}
+.x5-margin-top {margin-top: 5% !important;}
+/* end margin */
+
+/* drop down */
+.drop-down > .drop-trigger {
+    cursor: pointer;
+}
+
+.drop-down:hover > .drop-trigger + .drop-down-content {
+    height: fit-content;
+    opacity: 1;
+    transform: translateY(1);
+}
+
+.drop-down > .drop-trigger + .drop-down-content {
+    height: 0;
+    opacity: 0;
+    background-color: #fc7405;
+    padding: 0.5%;
+    border-radius: 5px;
+    position: absolute;
+    transition: all .4s ease;
+}
+
+.drop-down > .drop-trigger + .drop-down-content > a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    display: block;
+    transition: all .4s ease;
+}
+
+.drop-down > .drop-trigger + .drop-down-content > a:hover {
+    color: rgb(221, 211, 211);
+}
+/* end drop down */
+
+/* nav tabs */
+.nav-tabs{
+    background-color:transparent;
+    border-bottom: 1px solid #fc7405 !important;
+}
+
+
+.nav-tabs > li > a {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.nav-tabs > li > a.active {
+    text-align: center !important;
+    background-color: #fc7405 !important;
+    border: 0;
+    font-weight: bold;
+    color: rgb(10, 10, 10) !important;
+    width: 150px !important;
+}
+
+.tab-content{
+    margin-top: 2%;
+    font-size: 14pt;
+    color: rgb(161, 154, 154);
+    padding-top: 5px;
+}
+
+.nav-tabs > li > a:hover{
+    color:#fc7405;
+    border: 0;
+}
+/* end tabs */
+
+/* content layout */
+.content {
+    margin-left: 0;
+    padding: 0;
+    margin-bottom: 8%;
+    color: #fff;
+}
+
+.content > h3 {
+    font-size: 16pt;
+    text-transform: capitalize;
+}
+
+.content > p {
+    line-height: 33px;
+}
+/* end content */
+
+/* link */
+a.link-deactivate {
+    text-decoration: none;
+    color: rgb(231, 12, 12);
+    border: 1px solid rgb(231, 12, 12);
+    padding: 3.5%;
+    border-radius: 5px;
+}
+
+a.link-activate {
+    text-decoration: none;
+    color: rgb(12, 231, 23);
+    border: 1px solid rgb(12, 231, 23);
+    padding: 3.5%;
+    border-radius: 5px;
+}
+
+a.link {
+    font-size: 14pt;
+    text-decoration: none;
+    color: #fc7405;
+    border: 1px solid #fc7405;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+a.link > i {
+    margin-right: 0.5%;
+    transition: all .4s ease;
+}
+
+a.link:hover > i {
+    transform: scale(1.5,1.5);
+}
+
+/* end link */
+
+/* course title */
+.course_title {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+/* end title */
+
+/* pagination */
+nav{
+    background-color: transparent;
+}
+/* end pagination */
+
+/* input page border */
+.bottom-border {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(102, 100, 99, 0.55);
+}
+/* end page border */
+
+/* progress bar */
+.progress {
+    height: 5px;
+}
+
+.progress-title-green {
+    color: rgb(36, 190, 22);
+}
+
+.progress-title-yellow {
+    color: rgb(201, 183, 20);
+}
+
+.progress-title-blue {
+    color: rgb(31, 133, 201);
+}
+
+.progress-title-red {
+    color: rgb(201, 31, 31);
+}
+/* end progress bar */
